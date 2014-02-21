@@ -9,7 +9,7 @@ git clone https://github.com/bellx2/rubymotion-templates.git ~/Library/RubyMotio
 ```
 
 ## テンプレート種類
-### osx-ib
+### ios-ib
  StoryBoardを使った基本テンプレートです。
  - bubble-wrap  http://bubblewrap.io
  - ib  https://github.com/yury/ib
