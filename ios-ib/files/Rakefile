@@ -19,7 +19,7 @@ Motion::Project::App.setup do |app|
   app.version = "1.0"
   app.short_version = "1.0"
 
-  app.info_plist['UIMainStoryboardFile'] = 'Storyboard'
+  app.info_plist['UIMainStoryboardFile'] = 'Main'
 
   # app.identifier = config['app']['identifier']  
   # app.testflight.api_token  = config['testflight']['api_token']
