@@ -1,14 +1,17 @@
 # RubyMotion Template
 
-RubyMotionのオレオレ基本テンプレートです。
+Private RubyMotion Template
 
 ## 使い方
 
-```
-git clone https://github.com/bellx2/rubymotion-templates.git ~/Library/RubyMotion/template/
-```
+~/Library/RubyMotion/templateフォルダー内に展開します。
 
-# テンプレート種類
+```
+git clone https://github.com/bellx2/rubymotion-templates.git ~/Library/RubyMotion/template/ios-ib
+
+motion cretae <myApps> --template=ios-ib
+
+```
 
 ## ios-ib
  StoryBoardを使った基本テンプレートです。
