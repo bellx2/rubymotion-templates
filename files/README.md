@@ -1,26 +1,32 @@
 # RubyMotion Template
 
-RubyMotionの基本プロジェクトです。
+RubyMotion Basic Template Using InterfaceBuilder & CocoaPods
 
-## 使用方法
+## Install
 
-```
-bundle install
-rake pod:install
-rake ib:open
-```
+Install in ~/Library/RubyMotion/template
 
-をして必要ファイルを作成してください。
+>$ git clone https://github.com/bellx2/rubymotion-templates.git ~/Library/RubyMotion/template/ios-ib
 
-## 設定情報について
- config.ymlにAPIキー等の情報を書き込みRakefileで読み込み使います
 
-## 追加モジュール
+## Usage
 
-* [ib](https://github.com/yury/ib)
-* [bubble-wrap](http://bubblewrap.io/)
-* [motion-cocoapods](https://github.com/HipByte/motion-cocoapods)
+>$ motion cretae <myApps> --template=ios-ib
 
-## 以下を参考にしています。
 
-* [StoryBoradとIBのアウトレットとアクションを使う](http://d.hatena.ne.jp/laiso+iphone/20130510/1368201914)
+## Configuration
+
+Using config.yml to sparate settings from your code.
+"env" section is going to copy ENV['']
+
+## Note
+
+### RubyGems
+ * [bubble-wrap](http://bubblewrap.io)
+ * [ib](https://github.com/yury/ib)
+ * [motion-cocoapods](https://github.com/HipByte/motion-cocoapods)
+ * [afmotion](https://github.com/clayallsopp/afmotion)
+
+### CocoaPods
+ * [SVProgressHUD](https://github.com/samvermette/SVProgressHUD)
+ 
