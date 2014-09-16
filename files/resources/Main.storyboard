@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2Ft-hy-ERM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2Ft-hy-ERM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Hello View Controller-->
@@ -16,9 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8J7-mm-eGo">
-                                <rect key="frame" x="137" y="307" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OLg-M4-FUA">
+                                <rect key="frame" x="70" y="106" width="171" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8J7-mm-eGo">
+                                <rect key="frame" x="143" y="167" width="35" height="30"/>
                                 <state key="normal" title="Push">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,14 +31,15 @@
                                     <action selector="doAction:" destination="2Ft-hy-ERM" eventType="touchUpInside" id="0ID-MJ-V1d"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OLg-M4-FUA">
-                                <rect key="frame" x="75" y="246" width="171" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OLg-M4-FUA" firstAttribute="top" secondItem="qls-Ru-dAd" secondAttribute="bottom" constant="86" id="1d3-LU-U1Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OLg-M4-FUA" secondAttribute="trailing" constant="63" id="376-lQ-gP9"/>
+                            <constraint firstAttribute="centerX" secondItem="8J7-mm-eGo" secondAttribute="centerX" id="JZt-xW-Cmm"/>
+                            <constraint firstItem="8J7-mm-eGo" firstAttribute="top" secondItem="OLg-M4-FUA" secondAttribute="bottom" constant="31" id="Mww-6j-3yx"/>
+                            <constraint firstItem="OLg-M4-FUA" firstAttribute="leading" secondItem="Fz2-zZ-hqk" secondAttribute="leadingMargin" constant="54" id="fwI-pS-dou"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="button1" destination="8J7-mm-eGo" id="h7t-Jy-nUg"/>
